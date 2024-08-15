@@ -7,41 +7,55 @@
 }
 body{
     /* background-color: #beafa1; */
-    background-color: #806de0;
+    /* background-color: #806de0; */
+    background-color: rgb(183, 181, 181);
+    overflow-x: hidden;
 }
 #logo{
-    margin: 5px;
-    width: 20%;
+    margin: 10px 5px;
+    width: 180px;
 }
-nav a{
+nav{
+    background-color: #00274d;
+}
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav{
     float: right;
     text-align: center;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     padding: 10px;
-    width: 100px;
-    margin: 4px 0 0 0;
+    width: 120px;
+    margin: 8px 0 0 0;
     transition: background-color .5s ease-in-out;
-}
-
-a:hover{
-    background-color: #0e2659;
+    &:hover{
+        background-color: #ffffff3b;
+    }
 }
 
 #foot{
-    background-color: rgb(20, 8, 48);
+    background-color: #00274d;
     color: #fff;
     position: absolute;
     bottom: 0;
     text-align: center;
     padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 th, tr, td{
     padding: 10px;
+    font-size: 10px;
 }
 
-#head, #data{
-    font-size: 10px;
+#data a{
+    text-decoration: none;
+    color: white;
 }
