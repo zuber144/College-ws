@@ -8,7 +8,7 @@
 body{
     /* background-color: #beafa1; */
     /* background-color: #806de0; */
-    background-color: rgb(183, 181, 181);
+    background-color: #b4b4b8;
     overflow-x: hidden;
 }
 #logo{
@@ -16,7 +16,7 @@ body{
     width: 180px;
 }
 nav{
-    background-color: #00274d;
+    background-color: #afdaed;
 }
 nav::after {
     content: "";
@@ -39,23 +39,47 @@ nav::after {
 }
 
 #foot{
-    background-color: #00274d;
+    background-color: #5d6b6b;
     color: #fff;
     position: absolute;
     bottom: 0;
-    text-align: center;
     padding: 10px 20px;
     width: 100%;
+}
+
+#f-logo{
+    width: 20%;
+    float: left;
+    margin-right: 25px;
+}
+.heading{
     display: flex;
-    justify-content: center;
-}
 
-th, tr, td{
+}
+.ft{
+    margin: 0 10%;
+    font-size: 100%;
+}
+.h2{
+    margin: 10px;
+    text-align: center;
+}
+.btn{
     padding: 10px;
-    font-size: 10px;
+    width: 300px;
+    height: 70px;
+    margin: 10px;
+    font-size: 20px;
 }
 
-#data a{
-    text-decoration: none;
-    color: white;
+#btns{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover{
+    background-color: #5d6b6b;
 }
