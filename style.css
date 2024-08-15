@@ -1,13 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    /* background-color: #0e2659; */
-    /* background-color: #137582; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    /* background-color: #beafa1; */
-    /* background-color: #806de0; */
     background-color: #b4b4b8;
     overflow-x: hidden;
 }
