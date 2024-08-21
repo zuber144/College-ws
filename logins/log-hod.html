@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <div class="dropdown">
+            <button href="#" class="dropbtn">
+              Login <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">As a Admin</a>
+              <a href="#">As a HOD</a>
+              <a href="#">As a Teacher</a>
+              <a href="#">As a Parent</a>
+            </div>
+          </div>
+          <a href="#" class="nav">About Us</a>
+          <a href="#" class="nav">Contact Us</a>
+          <a href="#" class="nav">Home</a>
+        </div>
+        <a href="https://www.sgpbellary.com/"
+          ><img src="../logo.png" alt="th.jpg" id="logo"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <h2 id="hd">HOD Log-In</h2>
+      <br /><br />
+      <form class="form-container">
+        <label id="user_email" for="user">Username: </label>
+        <div class="wrap-input-2">
+          <input class="input" type="text" placeholder="Username/email" />
+          <span class="focus-border"></span>
+        </div>
+        <label id="password" for="user">Password: </label>
+        <div class="wrap-input-2">
+          <input class="input" type="password" placeholder="Password" />
+          <img
+            src="../eye.png"
+            width="14px"
+            height="12px"
+            style="display: inline; margin-left: -8%; vertical-align: middle"
+            id="togglePassword"
+          />
+          <span class="focus-border"></span>
+        </div>
+        <a href="#">forgot password</a>
+        <button class="btn-20">Next</button>
+        <br /><br />
+        <hr />
+        <p>if not register</p>
+        <a href="#" id="sin">sign-in</a>
+      </form>
+    </main>
+    <footer id="foot">
+      <img src="logo.png" alt="sgp logo" id="f-logo" />
+      <div class="heading">
+        <p class="ft" id="f1">Contact Us</p>
+        <p class="ft" id="f2">Services</p>
+        <p class="ft" id="f3">Quick links</p>
+      </div>
+      <div class="heading2">
+        <p class="fct">+91 8123452607</p>
+        <p class="fct">sgpbellary@gmail.com</p>
+      </div>
+    </footer>
+    <script>
+      const togglePassword = document.querySelector("togglePassword");
+
+      const password = document.querySelector("pass");
+
+      togglePassword.addEventListener("click", function (e) {
+        // Toggle the type attribute
+        const type =
+        password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // Toggle the eye slash icon
+        if (togglePassword.src.match("../eyeslash.png")) {
+          togglePassword.src = "../eye.png";
+        } else {
+          togglePassword.src = "../eyeslash.png";
+        }
+      });
+    </script>
+  </body>
+</html>
