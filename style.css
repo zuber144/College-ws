@@ -207,29 +207,47 @@ transparent;
   translate: -50% -50%;
 }
 
-.form-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px; /* Adjust spacing between form groups */
-}
-
-.form-group label {
-  margin-right: 10px; /* Space between label and input */
-  flex: 0 0 150px; /* Fixed width for labels, adjust as needed */
-}
-
-.form-group .input {
-  flex: 1; /* Allow input to take the remaining space */
-}
-
-.wrap-input-2 {
+.form-group{
   position: relative;
 }
 
-.wrap-input-2 img {
+input{
+  width: 220px;
+  height: 20px;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  background: transparent;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: large;
+  pointer-events: none;
+  transition: .2s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  font-size: medium;
+  padding: 0 7px;
+  background-color: #b4b4b8;
+}
+
+#togglePassword {
   cursor: pointer;
   position: absolute;
-  right: 10px;
+  width: 20px;
+  height: 16px;
+  right: 16px;
   top: 50%;
   transform: translateY(-50%);
 }

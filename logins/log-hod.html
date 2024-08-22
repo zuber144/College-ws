@@ -35,28 +35,23 @@
       <br /><br />
       <form class="form-container">
         <div class="form-group">
-            <label id="user_email" for="user">Username:</label>
-            <input id="user" class="input" type="text" placeholder="Username/email" />
+          <input id="user" class="input" required type="text" />
+          <label id="user_email" for="user">Username</label>
         </div>
+        <br>
         <div class="form-group">
-            <label id="password" for="password">Password:</label>
-            <div class="wrap-input-2">
-                <input id="password" class="input" type="password" placeholder="Password" />
-                <img
-                    src="eye.png"
-                    width="14px"
-                    height="12px"
-                    id="togglePassword"
-                />
-            </div>
+            <input id="password" required class="input" type="password" />
+            <img src="eye.png" id="togglePassword" />
+          <label id="pass" for="password">Password</label>
         </div>
+        <br>
         <a href="#">Forgot password</a>
-        <button class="btn-20">Next</button>
+        <button type="submit" class="btn-20">Next</button>
         <br /><br />
         <hr />
         <p>If not registered</p>
         <a href="#" id="sin">Sign-in</a>
-    </form>
+      </form>
     </main>
     <footer id="foot">
       <img src="../logo.png" alt="sgp logo" id="f-logo" />
@@ -74,9 +69,12 @@
       const togglePassword = document.querySelector("#togglePassword");
       const password = document.querySelector("#password");
       togglePassword.addEventListener("click", function () {
-        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
         password.setAttribute("type", type);
-        const eyeIcon = togglePassword.src.includes("eye.png") ? "eyeslash.png" : "eye.png";
+        const eyeIcon = togglePassword.src.includes("eye.png")
+          ? "eyeslash.png"
+          : "eye.png";
         togglePassword.src = eyeIcon;
       });
     </script>
