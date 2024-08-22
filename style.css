@@ -1,137 +1,137 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    background-color: #b4b4b8;
-    overflow-x: hidden;
-    margin-top: 100px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  margin-top: 100px;
 }
 #logo{
-    margin: 10px 5px;
-    width: 180px;
+  margin: 10px 5px;
+  width: 180px;
 }
 nav{
-    background-color: #afdaed;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  background-color: #afdaed;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav-content{
-    position:absolute;
-    width: 100%;
-    top: 15%;
+  position:absolute;
+  width: 100%;
+  top: 15%;
  }
 .nav{
-    float: right;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    padding: 10px;
-    width: 120px;
-    margin: 0;
-    transition: background-color .5s ease-in-out;
-    &:hover{
-        background-color: #ffffff3b;
-    }
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  width: 120px;
+  margin: 0;
+  transition: background-color .5s ease-in-out;
+  &:hover{
+      background-color: #ffffff3b;
+  }
 }
 
 .dropdown{
-    float: right;
-    overflow: hidden;
+  float: right;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn{
-    font-size: 20px;
-    color: #fff;
-    padding: 10px;
-    width: 120px;
-    margin: 0 10px 0 0;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    transition: background-color .5s ease-in-out;
-    &:hover{
-        background-color: #ffffff3b;
-    }
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  width: 120px;
+  margin: 0 10px 0 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: background-color .5s ease-in-out;
+  &:hover{
+      background-color: #ffffff3b;
+  }
 }
 
 .dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #afdaed;
-    width: 140px;
-    box-shadow: 0 8px 12px 0px rgba(0,0,0,0.4);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #afdaed;
+  width: 140px;
+  box-shadow: 0 8px 12px 0px rgba(0,0,0,0.4);
+  z-index: 1;
 }
 
 .dropdown-content a{
-    float: none;
-    color: white;
-    font-size: 15px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: white;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover{
-    background-color: #dddddd9c;
+  background-color: #dddddd9c;
 }
 
 .dropdown:hover .dropdown-content{
-    display: block;
+  display: block;
 }
 
 #foot{
-    background-color: #5d6b6b;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    padding: 10px 20px;
-    width: 100%;
+  background-color: #5d6b6b;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+  width: 100%;
 }
 
 #f-logo{
-    width: 20%;
-    float: left;
-    margin-right: 25px;
+  width: 20%;
+  float: left;
+  margin-right: 25px;
 }
 .heading{
-    display: flex;
+  display: flex;
 
 }
 .ft{
-    margin: 0 10%;
-    font-size: 100%;
+  margin: 0 10%;
+  font-size: 100%;
 }
 .h2{
-    margin: 10px;
-    text-align: center;
+  margin: 10px;
+  text-align: center;
 }
 .btn{
-    padding: 10px;
-    width: 300px;
-    height: 70px;
-    margin: 10px;
-    font-size: 20px;
-    border-radius: 30px;
+  padding: 10px;
+  width: 300px;
+  height: 70px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 30px;
 }
 
 #btns{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn:hover{
-    transform: translateY(-3px);
-    transform: translateX(5px);
-    box-shadow: 0 5px 3px 3px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  transform: translateX(5px);
+  box-shadow: 0 5px 3px 3px rgba(0,0,0,0.2);
 }
 
 .btn-20,
@@ -167,10 +167,6 @@ transparent;
 }
 .btn-20:-moz-focusring {
   outline: auto;
-}
-.btn-20 svg {
-  display: block;
-  vertical-align: middle;
 }
 .btn-20 [hidden] {
   display: none;
@@ -239,14 +235,14 @@ input:valid ~ label {
   top: 0;
   font-size: medium;
   padding: 0 7px;
-  background-color: #b4b4b8;
+  background-color: #fff;
 }
 
 #togglePassword {
   cursor: pointer;
   position: absolute;
   width: 20px;
-  height: 16px;
+  height: 20px;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
