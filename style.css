@@ -119,7 +119,6 @@ nav{
   font-size: 20px;
   border-radius: 30px;
 }
-
 #btns{
   margin: 0;
   position: absolute;
@@ -213,7 +212,7 @@ input{
   padding: 10px;
   font-size: 15px;
   color: black;
-  background: transparent;
+  background: transparent !important;
   outline: none;
   border: 2px solid black;
   border-radius: 6px;
@@ -246,4 +245,9 @@ input:valid ~ label {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#hd{
+  display: flex;
+  justify-content: center;
 }

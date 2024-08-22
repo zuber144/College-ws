@@ -18,7 +18,7 @@
             <div class="dropdown-content">
               <a href="#">As a Admin</a>
               <a href="log-hod.html">As a HOD</a>
-              <a href="log-teachers.html">As a Teacher</a>
+              <a href="#">As a Teacher</a>
               <a href="#">As a Parent</a>
             </div>
           </div>
@@ -32,7 +32,7 @@
       </nav>
     </header>
     <main>
-      <h2 id="hd" align="center">HOD Log-In</h2>
+      <h2 id="hd" align="center">Teachers Log-In</h2>
       <form class="form-container">
         <div class="form-group">
           <input id="user" class="input" required type="text" />
@@ -40,13 +40,7 @@
         </div>
         <br />
         <div class="form-group">
-          <input
-            id="password"
-            required
-            class="input"
-            type="password"
-            minlength="8"
-          />
+          <input id="password" required class="input" type="password" />
           <img src="eye.png" id="togglePassword" />
           <label id="pass" for="password">Password</label>
         </div>
@@ -83,12 +77,6 @@
           : "eye.png";
         togglePassword.src = eyeIcon;
       });
-      const handleForm = (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        const obj = Object.fromEntries(formData.entries());
-        console.log(obj);
-      };
     </script>
   </body>
 </html>
