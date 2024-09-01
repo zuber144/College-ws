@@ -6,11 +6,17 @@
     <link rel="website icon" type="png" href="../icon.png" />
     <title>SGP Portal</title>
     <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="nav-content">
+          <a href="#" class="nav">About Us</a>
+          <a href="#" class="nav">Contact Us</a>
           <div class="dropdown">
             <button href="#" class="dropbtn">
               Login <i class="fa fa-caret-down"></i>
@@ -18,12 +24,10 @@
             <div class="dropdown-content">
               <a href="#">As a Admin</a>
               <a href="log-hod.html">As a HOD</a>
-              <a href="#">As a Teacher</a>
+              <a href="log-teachers.html">As a Teacher</a>
               <a href="#">As a Parent</a>
             </div>
           </div>
-          <a href="#" class="nav">About Us</a>
-          <a href="#" class="nav">Contact Us</a>
           <a href="../index.html" class="nav">Home</a>
         </div>
         <a href="https://www.sgpbellary.com/"
@@ -33,50 +37,70 @@
     </header>
     <main>
       <h2 id="hd" align="center">Teachers Log-In</h2>
-      <form class="form-container">
-        <div class="form-group">
-          <input id="user" class="input" required type="text" />
-          <label id="user_email" for="user">Username</label>
+      <form class="form-container" action="#" autocomplete="off">
+        <div class="inputBox">
+          <input id="user" required type="text" />
+          <span id="user_email" for="user">Username</span>
         </div>
         <br />
-        <div class="form-group">
-          <input id="password" required class="input" type="password" />
-          <img src="eye.png" id="togglePassword" />
-          <label id="pass" for="password">Password</label>
+        <div class="inputBox">
+          <input id="password" required type="password" />
+          <span for="password">Password</span>
+          <div id="toggle" onclick="showHide()"></div>
         </div>
         <br />
         <a href="#">Forgot password</a>
-        <button type="submit" class="btn-20">Next</button>
+        <button class="submit-button">Login</button>
         <br /><br />
         <hr />
         <p>If not registered</p>
         <a href="#" id="sin">Sign-Up</a>
       </form>
     </main>
-    <footer id="foot">
-      <img src="../logo.png" alt="sgp logo" id="f-logo" />
-      <div class="heading">
-        <p class="ft" id="f1">Contact Us</p>
-        <p class="ft" id="f2">Services</p>
-        <p class="ft" id="f3">Quick links</p>
+    <footer class="footer">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>
+          The institute stress the core values and ethics of commitment, Equity,
+          Team Spirit, Transparency, Quality and Resource Optimization among the
+          students and staff.
+        </p>
       </div>
-      <div class="heading2">
-        <p class="fct">+91 8123452607</p>
-        <p class="fct">sgpbellary@gmail.com</p>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#">Admissions</a><br />
+        <a href="#">Academics</a><br />
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Information</h3>
+        <p>
+          Vidya Soudha, 29, Infantry Road, Sanjay Gandhi Nagar, Ballari -
+          583104, Karnataka.
+        </p>
+        <p>
+          Email: <a href="mailto:sgpbellary@gmail.com">sgpbellary@gmail.com</a>
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
       </div>
     </footer>
     <script>
-      const togglePassword = document.querySelector("#togglePassword");
-      const password = document.querySelector("#password");
-      togglePassword.addEventListener("click", function () {
-        const type =
-          password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
-        const eyeIcon = togglePassword.src.includes("eye.png")
-          ? "eyeslash.png"
-          : "eye.png";
-        togglePassword.src = eyeIcon;
-      });
+      let password = document.getElementById("password");
+      let togglePassword = document.getElementById("toggle");
+
+      function showHide() {
+        if (password.type === "password") {
+          password.setAttribute("type", "text");
+          togglePassword.classList.add("hide");
+        } else {
+          password.setAttribute("type", "password");
+          togglePassword.classList.remove("hide");
+        }
+      }
     </script>
   </body>
 </html>
